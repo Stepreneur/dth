@@ -1,0 +1,57 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
+/// The underlying table does not contain a valid unique identifier and can therefore currently not be handled by Prisma Client.
+model dth {
+  id            Int     @id @unique(map: "id_UNIQUE") @default(autoincrement())
+  BUD_ID        String? @db.Text
+  BHD_ID        String? @db.Text
+  BSL_ID        String? @db.Text
+  DATECREATED   String? @db.Text
+  LW_DATE       String? @db.Text
+  USERNAME      String? @db.Text
+  COST          String? @db.Text
+  SELL          String? @db.Text
+  AGENT         String? @db.Text
+  RETAIL        String? @db.Text
+  COSTTAX       String? @db.Text
+  SELLTAX       String? @db.Text
+  AGENTTAX      String? @db.Text
+  RETAILTAX     String? @db.Text
+  PAX           String? @db.Text
+  CHS           String? @db.Text
+  CHD           String? @db.Text
+  INF           String? @db.Text
+  ESC           String? @db.Text
+  DRV           String? @db.Text
+  GDE           String? @db.Text
+  COSTFOC       String? @db.Text
+  SCU_QTY       String? @db.Text
+  SG            String? @db.Text
+  TW            String? @db.Text
+  DB            String? @db.Text
+  TR            String? @db.Text
+  QD            String? @db.Text
+  OT            String? @db.Text
+  SCU_FOC       String? @db.Text
+  SERVICEDATE   String? @db.Text
+  PRICECODE     String? @db.Text
+  SERVICESTATUS String? @db.Text
+  OPT_ID        String? @db.Text
+  BRANCH        String? @db.Text
+  DEPARTMENT    String? @db.Text
+  REFERENCE     String? @db.Text
+  AGENTCODE     String? @db.Text
+  BOOKINGSTATUS String? @db.Text
+  CURRENCY      String? @db.Text
+  TAXINDICATOR  String? @db.Text
+  ACTION        String? @db.Text
+  DaySequence   String? @db.Text
+
+}

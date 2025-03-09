@@ -20,7 +20,44 @@
 }
 
 body {
-  background: var(--background);
+  background: white;
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+
+
+.custom-table {
+  border-radius: 8px;
+}
+
+
+.custom-table .ant-table-thead > tr > th {
+  border-right: none !important;
+  background-color: rgba(45, 62, 146, 1);
+  color: #fff;
+  text-align: center;
+}
+
+.custom-table .ant-table-tbody > tr > td {
+  text-align: center;
+}
+
+.custom-table .ant-table-tbody > tr:hover {
+  background-color: #e6f7ff;
+}
+
+/* เพิ่มในไฟล์ CSS ของคุณ */
+.custom-table .ant-table-thead > tr ,
+.custom-table .ant-table-tbody > tr > td {
+  border: 1px solid #ddd;
+}
+
+.ant-pagination-item-active {
+  border: 1px solid  rgb(149, 201, 65) !important; /* สีเส้นขอบ */
+}
+
+.ant-pagination-item-active a {
+  color: black !important; /* สีข้อความ */
+}
+
