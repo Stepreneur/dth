@@ -4,7 +4,7 @@ generator client {
 
 datasource db {
   provider = "mysql"
-  url      = "mysql://u363958985_tdh:%40Kfranzaza0087@classlinker.site:3306/u363958985_tdh"
+  url      = "mysql://u363958985_tdh:Kfranzaza0087@classlinker.site:3306/u363958985_tdh"
 }
 
 /// The underlying table does not contain a valid unique identifier and can therefore currently not be handled by Prisma Client.
